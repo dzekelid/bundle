@@ -1,9 +1,10 @@
+---
 swagger: "2.0"
 x-collection-name: Plentymarkets
-x-complete: 1
+x-complete: 0
 info:
-  title: plentymarkets REST-API
-  description: the-plentymarkets-rest-api-expands-the-functionality-of-the-plentymarkets-cms-and-allows-access-to-resources-i-e--data-records-via-unique-uri-paths
+  title: Plentymarkets Remove a bundle component
+  description: Removes a component from a bundle. The bundle ID must be specified.
   contact:
     name: plentymarkets
     url: https://forum.plentymarkets.com/c/rest-api
@@ -77,43 +78,17 @@ paths:
       - Remove
       - Bundle
       - Component
-    get:
-      summary: Get a variation bundle
-      description: Gets the bundle information for a specific bundle component.
-      operationId: getRestItemsVariationsVariationVariationBundlesBundle
-      x-api-path-slug: restitemsidvariationsvariationidvariation-bundlesbundleid-get
-      parameters:
-      - in: path
-        name: bundleId
-      - in: path
-        name: id
-      - in: path
-        name: variationId
-      responses:
-        200:
-          description: OK
-      tags:
-      - Variation
-      - Bundle
-    put:
-      summary: Update a variation bundle
-      description: Updates a variation bundle component.
-      operationId: putRestItemsVariationsVariationVariationBundlesBundle
-      x-api-path-slug: restitemsidvariationsvariationidvariation-bundlesbundleid-put
-      parameters:
-      - in: body
-        name: /rest/items/{id}/variations/{variationId}/variation_bundles/{bundleId}
-        schema:
-          $ref: '#/definitions/holder'
-      - in: path
-        name: bundleId
-      - in: path
-        name: id
-      - in: path
-        name: variationId
-      responses:
-        200:
-          description: OK
-      tags:
-      - Variation
-      - Bundle
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

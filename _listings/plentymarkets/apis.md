@@ -11,8 +11,8 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "7"
 x-alexaRank: ""
 tags: Bundle
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/bundle/master/_listings/plentymarkets/apis.md
 specificationVersion: "0.14"
 apis:
@@ -29,6 +29,46 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/bundle/master/_listings/plentymarkets/restitemsidvariationsvariationidvariation-bundles-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/bundle/master/_listings/plentymarkets/restitemsidvariationsvariationidvariation-bundles-get-openapi.md
+- name: plentymarkets REST-API - Add a variation to a bundle
+  x-api-slug: restitemsidvariationsvariationidvariation-bundles-post
+  description: Adds a variation to a bundle variation as a bundle component.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/plentymarkets.png
+  humanURL: http://www.plentymarkets.co.uk
+  baseURL: https://example.com//
+  tags: ERP, Service API, Relative Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bundle/master/_listings/plentymarkets/restitemsidvariationsvariationidvariation-bundles-post-openapi.md
+- name: plentymarkets REST-API - Remove a bundle component
+  x-api-slug: restitemsidvariationsvariationidvariation-bundlesbundleid-delete
+  description: Removes a component from a bundle. The bundle ID must be specified.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/plentymarkets.png
+  humanURL: http://www.plentymarkets.co.uk
+  baseURL: https://example.com//
+  tags: ERP, Service API, Relative Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bundle/master/_listings/plentymarkets/restitemsidvariationsvariationidvariation-bundlesbundleid-delete-openapi.md
+- name: plentymarkets REST-API - Get a variation bundle
+  x-api-slug: restitemsidvariationsvariationidvariation-bundlesbundleid-get
+  description: Gets the bundle information for a specific bundle component.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/plentymarkets.png
+  humanURL: http://www.plentymarkets.co.uk
+  baseURL: https://example.com//
+  tags: ERP, Service API, Relative Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bundle/master/_listings/plentymarkets/restitemsidvariationsvariationidvariation-bundlesbundleid-get-openapi.md
+- name: plentymarkets REST-API - Update a variation bundle
+  x-api-slug: restitemsidvariationsvariationidvariation-bundlesbundleid-put
+  description: Updates a variation bundle component.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/plentymarkets.png
+  humanURL: http://www.plentymarkets.co.uk
+  baseURL: https://example.com//
+  tags: ERP, Service API, Relative Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/bundle/master/_listings/plentymarkets/restitemsidvariationsvariationidvariation-bundlesbundleid-put-openapi.md
 x-common:
 - type: x-blog-rss
   url: https://www.plentymarkets.co.uk/?ActionCall=WebActionRSS&rrss_id=1

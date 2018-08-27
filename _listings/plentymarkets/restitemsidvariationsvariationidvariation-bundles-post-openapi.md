@@ -3,9 +3,8 @@ swagger: "2.0"
 x-collection-name: Plentymarkets
 x-complete: 0
 info:
-  title: Plentymarkets List bundle components
-  description: List all components of a bundle. The ID of the item and the ID of the
-    variation to which bundle components were added must be specified.
+  title: Plentymarkets Add a variation to a bundle
+  description: Adds a variation to a bundle variation as a bundle component.
   contact:
     name: plentymarkets
     url: https://forum.plentymarkets.com/c/rest-api
@@ -38,6 +37,27 @@ paths:
       - List
       - Bundle
       - Components
+    post:
+      summary: Add a variation to a bundle
+      description: Adds a variation to a bundle variation as a bundle component.
+      operationId: postRestItemsVariationsVariationVariationBundles
+      x-api-path-slug: restitemsidvariationsvariationidvariation-bundles-post
+      parameters:
+      - in: body
+        name: /rest/items/{id}/variations/{variationId}/variation_bundles
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: id
+      - in: path
+        name: variationId
+      responses:
+        200:
+          description: OK
+      tags:
+      - Variation
+      - To
+      - Bundle
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0
